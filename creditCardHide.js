@@ -17,3 +17,11 @@ function hideCard(cardNum) {
 console.log(hideCard(8513845961237456));
 
 // should output ************7456
+
+//using regex
+function hideCardRegex(cardNum) {
+  let numStr = `${cardNum}`;
+  return numStr.replace(/\d(?=\d{4})/mg, '*');
+}
+
+console.log(hideCardRegex(8513845961237456));
