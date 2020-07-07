@@ -8,5 +8,5 @@ function addInput(input){
   }
   return sum;
 }
-
-console.log(addInput(5528))
+console.log(addInput(6714283));
+console.log(addInput(5528));
