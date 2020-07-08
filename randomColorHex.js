@@ -6,3 +6,7 @@ function randomHexadecimal() {
 }
 
 console.log(randomHexadecimal());
+
+//how many hexadecimal combinations?
+//https://stackoverflow.com/questions/22285636/total-number-of-possible-color-combinations
+//toString base 16
