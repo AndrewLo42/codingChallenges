@@ -4,5 +4,6 @@ function whatCentury(year)  {
   if (year < 1000 || year > 2010){
     return "out of range";
   }
-  return Math.ceil(year/100)
+  return Math.ceil(year/100);
 }
+console.log(whatCentury(2000));
