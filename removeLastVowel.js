@@ -1,10 +1,9 @@
 // Time for something short and sweet - please write a function that removes the last vowel from each word in a sentence.Only remove the LAST instance of a vowel.For example, "moon" would turn into "mon".
 
 function removeLastVowel(sentence) {
-  sentence.replace(
+  return sentence.replace(
     /[aeiou]([^aeiou]*?)(?= |$)/gi,
     '$1');
-  return sentence;
 }
 
 console.log(removeLastVowel("Hello moon"));
