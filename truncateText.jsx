@@ -1,7 +1,7 @@
 //a custom componenet to truncate text I made for a project I wanted to hang onto
 
-// import React from 'react';
-// import styled from 'styled-components';
+import React from 'react';
+import styled from 'styled-components';
 
 const ReadMoreText = styled.a`
   color: blue;
