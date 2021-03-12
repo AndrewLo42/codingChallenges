@@ -1,3 +1,5 @@
+//works, way faster. 	76 ms
+
 var canFormArray = function(arr, pieces) {
     for (let i = 0; i < pieces.length; i++) {
     let ind = -1;
@@ -27,3 +29,27 @@ Your goal is to form arr by concatenating the arrays in pieces in any order. How
 
 Return true if it is possible to form the array arr from pieces. Otherwise, return false.
 */
+
+
+//first attempt
+// This solution works, BUT is too slow. 	84 ms
+
+var canFormArray1 = function(arr, pieces) {
+  let result = "";
+  let joinedArr = arr.join("");
+  for (let i = 0; i < pieces.length; i++) {
+    pieces[i] = pieces[i].join("");
+    result += pieces[i];
+    if (joinedArr.indexOf(pieces[i]) === -1){
+      return false;
+    }
+
+  }
+  if(result.length < joinedArr.length) {
+    return false;
+  }
+  return true;
+};
+
+
+console.log(canFormArray1( [91,4,64,78], [[78],[4,64],[91]]))
